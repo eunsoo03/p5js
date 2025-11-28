@@ -113,13 +113,14 @@ function draw() {
   ellipse(250,330,20,20);
   ellipse(350 + handDX,330 + handDY,20,20); //오른손
   
-  colorMode(RGB)
-  fill(255,255,0,120);
-  ellipse(mouseX, mouseY, 40, 40) //마우스 포인터 하이라이트(노란색)
+  //colorMode(RGB)
+  //fill(255,255,0,120);
+  //ellipse(mouseX, mouseY, 40, 40) //마우스 포인터 하이라이트(노란색)
 }
 
 function keyPressed() {
   if (key === 's') {
     saveGif('report3', 5);
   }
+
 }
