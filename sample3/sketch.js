@@ -62,7 +62,7 @@ function draw() {
   
   //과제3 - 마우스 인터랙션 : 마우스 포인터를 따라 움직이는 눈동자
   offSet = -4 + mouseX/600*8
-  if(mouseX > 600){
+  if(mouseX > 600 || mouseX < 0){
     offSet = 4;
   }
   ellipse(255 + offSet,177,10,10); //오른쪽 눈동자
@@ -124,3 +124,4 @@ function keyPressed() {
   }
 
 }
+
