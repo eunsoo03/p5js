@@ -13,7 +13,7 @@ function draw() {
     quad(0, 0, 600, 0, 600, 140-40*i, 0, 190-40*i);
   }
   
-  let ml = 0.5*sin(frameCount*PI/60) + 0.5; //moon light - 달 빛의 세기
+  let ml = 0.1*sin(frameCount*PI/60) + 0.5; //moon light - 달 빛의 세기
   
   // 달
   fill(60, 100*ml, 45*ml + 30);
@@ -98,4 +98,5 @@ function keyPressed() {
   if (key === 's') {
     saveGif('mySketch', 2);
   }
+
 }
