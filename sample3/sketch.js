@@ -95,7 +95,7 @@ function draw() {
   
   //과제3 - 키보드 인터랙션 : g키를 누르고 있는 동안 오른손이 마우스 포인터를 향함
   if(keyIsPressed){
-    if(key === 'g'){
+    if(key === 'g' || key === 'G'){
       armDX = -26 + mouseX - 324;
       armDY = -26 + mouseY - 304;
       handDX = -350 + mouseX;
@@ -127,5 +127,6 @@ function keyPressed() {
   }
 
 }
+
 
 
